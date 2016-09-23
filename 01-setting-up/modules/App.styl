@@ -1,0 +1,215 @@
+.nav
+  display flex
+  background lightcyan
+  justify-content space-between
+  width 100%
+  padding 10px 20px
+  align-content center
+
+.nav p
+  font-size 2rem
+  font-weight 500
+  letter-spacing .3rem
+
+.nav span
+  color red
+
+.nav ul
+  display flex
+
+.nav li
+  list-style none
+  font-size 2rem
+  padding 0 10px
+
+.active
+  color green
+  font-weight 800
+
+.Repos, .About, .Home
+  padding 0 20px
+
+.About
+  padding 0 20px
+
+.ReposFrame
+  display flex
+
+.Repos
+  padding-bottom 40px
+  background cyan
+
+.Repos li
+  font-size 1.5rem
+  list-style none
+
+form
+  font-family inherit
+  font-size 2rem
+
+input
+  border-radius 0
+
+  -webkit-appearance none
+  height 30px
+  margin-bottom 10px
+  font-family inherit
+  font-size 1.5rem
+
+.Repo
+  display flex
+  flex-direction column
+  padding-left 20px
+
+@font-face
+  font-family "typewriter"
+  src url(veteran_typewriter.ttf) format('truetype')
+
+@font-face
+  font-family "handwriting"
+  src url(journal.ttf) format('truetype')
+
+.Contact
+  background-color #F1F5F2
+  padding 40px 0
+  height 100%
+
+.Contact form
+  position relative
+  width 740px
+  height 498px
+  margin 0 auto
+
+  background #FFF url(background.jpg)
+
+
+.Contact label
+  font 1em "typewriter", sans-serif
+
+.Contact input, textarea
+  font 2em "handwriting", sans-serif
+
+  border none
+  padding 0 10px
+  margin 0
+  width 240px
+
+  background none
+
+.Contact input
+  height 2em
+  vertical-align middle
+
+.Contact textarea
+  display block
+  padding 10px
+  margin 10px 0 0 -10px
+  width 340px
+  height 320px
+
+  resize none
+  overflow auto
+
+.Contact input:focus, textarea:focus
+  background rgba(0,0,0,.1)
+  border-radius 5px
+  outline none
+
+.Contact h1
+  position absolute
+  left 415px
+  top 195px
+  font 1em "typewriter", sans-serif
+
+.Contact #from
+  position absolute
+  left 410px
+  top 230px
+
+.Contact #reply
+  position absolute
+  left 405px
+  top 282px
+
+.Contact #message
+  position absolute
+  left 25px
+  top 80px
+
+.Contact button
+  position absolute
+  left 440px
+  top 360px
+
+  padding 10px
+
+  font bold .6em sans-serif
+  border 2px solid #333
+  border-radius 5px
+  background none
+
+  cursor pointer
+
+  -webkit-transform rotate(-2deg)
+  -moz-transform rotate(-2deg)
+  -ms-transform rotate(-2deg)
+  -o-transform rotate(-2deg)
+  transform rotate(-2deg)
+
+  transition 1s all
+
+.Contact button:after
+  content " >>>"
+
+.Contact button:hover, button:focus
+  outline none
+  background #000
+  color #FFF
+  font-size: .8rem
+
+.Contact #thankyou_message
+  display none
+  font-size 2rem
+
+.Contact #email-Invalid
+  display none
+  font-size 2rem
+
+  // ``` {
+  //       isbn: number,
+  //       title: string,
+  //       author: string,
+  //       publisher: string,
+  //       copyrightDate: string,
+  //       version: string,
+  //       numCopies: number,
+  //       physicalCopies: [
+  //         {
+  //           id: number,
+  //           checkedOut: boolean,
+  //           checkOutInfo:
+  //             {
+  //               userId: number,
+  //               dueDate: string,
+  //               checkOutDate: string,
+  //               numExtend: number
+  //             }
+  //         },
+  //         {
+  //           id: number,
+  //           checkedOut: boolean,
+  //           checkOutInfo:
+  //             {
+  //               userId: number,
+  //               dueDate: string,
+  //               checkOutDate: string,
+  //               numExtend: number
+  //             }
+  //         }
+  //       ],
+  //       reservations:
+  //           {
+  //             userID: string,
+  //             reservationDate: string
+  //           }
+  //       } ```
